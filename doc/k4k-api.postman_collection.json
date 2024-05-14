@@ -1,0 +1,873 @@
+{
+	"info": {
+		"_postman_id": "b2e2a743-0efc-48c0-92d8-e7b37af57c3d",
+		"name": "k4k-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "test- tasks",
+			"item": [
+				{
+					"name": "http://localhost:3000/tasks",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "title",
+									"value": "test totle",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "test description",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/tasks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tasks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST http://localhost:3000/tasks",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "title",
+									"value": "test totle",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "test description",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/tasks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tasks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET taskby Id http://localhost:3000/tasks",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "title",
+									"value": "test totle",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "test description",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/tasks/859a02c0-cb61-11e9-a7d1-e91ccfbdcf2c",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tasks",
+								"859a02c0-cb61-11e9-a7d1-e91ccfbdcf2c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE taskby Id http://localhost:3000/tasks",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "title",
+									"value": "test totle",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "test description",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/tasks/859a02c0-cb61-11e9-a7d1-e91ccfbdcf2c",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tasks",
+								"859a02c0-cb61-11e9-a7d1-e91ccfbdcf2c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PATCH taskby Id http://localhost:3000/tasks",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "title",
+									"value": "test totle",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "test description",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/tasks/859a02c0-cb61-11e9-a7d1-e91ccfbdcf2c/DONE",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tasks",
+								"859a02c0-cb61-11e9-a7d1-e91ccfbdcf2c",
+								"DONE"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "iugu",
+			"item": [
+				{
+					"name": "https://api.iugu.com/v1/customers",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization:",
+								"value": "Basic NjY5MGFhYWU5NGEwMGFkZTU5NmQzNTg1M2FiZTdlNmU6",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "William Mori",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "william.mori@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://api.iugu.com/v1/customers",
+							"protocol": "https",
+							"host": [
+								"api",
+								"iugu",
+								"com"
+							],
+							"path": [
+								"v1",
+								"customers"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "{{host}}/calculator",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{accessToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "time",
+							"value": "17",
+							"type": "text"
+						},
+						{
+							"key": "duration",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "km",
+							"value": "2.9",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "0",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/calculator",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"calculator"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{host}}/calculator/complete",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{accessToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Origin",
+						"value": "http://www.example.com"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \"city\": 0,\n   \"shared\":1,\n   \"age\":3,\n   \"days\":[\n     {\n       \"weekday\":3,\n       \"distance\": 2.9,\n       \"duration\": 10,\n       \"time\": 17\n     },\n     {\n       \"weekday\":3,\n       \"distance\": 2.9,\n       \"duration\": 10,\n       \"time\": 17\n     }\n   ]\n}"
+				},
+				"url": {
+					"raw": "{{host}}/calculator/complete",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"calculator",
+						"complete"
+					]
+				},
+				"description": "arguments example:\n{\n   \"city\": 0,\n   \"shared\":1,\n    \"age\":5,\n   \"days\":[\n     {\n       \"weekday\":0,\n       \"distance\": 4.0,\n       \"duration\": 12,\n       \"time\": 13,\n       \"back\":{\n         \"distance\": 5.0,\n         \"duration\": 18,\n         \"time\": 18\n       }\n     },\n     {\n       \"weekday\":3,\n       \"distance\": 4.0,\n       \"duration\": 12,\n       \"time\": 13\n     },\n     {\n       \"weekday\":5,\n       \"distance\": 4.0,\n       \"duration\": 12,\n       \"time\": 13\n     }\n   ]\n}\n\npayload example:\n\n{\n    \"price\": 66.01,\n    \"driverShare\": 49.51\n}"
+			},
+			"response": []
+		},
+		{
+			"name": "{{host}}/firebase/users",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{accessToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "{{host}}/firebase/users/",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"firebase",
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{host}}/users/create-user-in-payment-method",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\" : \"Will2\", \"email\": \"will2@test.com\"}"
+				},
+				"url": {
+					"raw": "{{host}}/users/create-user-in-payment-method",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"users",
+						"create-user-in-payment-method"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{host}}/users/create-token",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{accessToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\n\t\"number\":\"4242424242424242\",\n\t\"verification_value\":\"123\",\n\t\"first_name\": \"Will\",\n\t\"last_name\" : \"Mori\",\n\t\"month\": \"01\",\n\t\"year\": \"2026\"\n\t\n}"
+				},
+				"url": {
+					"raw": "{{host}}/users/create-token",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"users",
+						"create-token"
+					]
+				},
+				"description": "arguments example:\n{\n\n\t\"number\":\"4242424242424242\",\n\t\"verification_value\":\"123\",\n\t\"first_name\": \"Will\",\n\t\"last_name\" : \"Mori\",\n\t\"month\": \"01\",\n\t\"year\": \"2026\"\n\t\n}"
+			},
+			"response": []
+		},
+		{
+			"name": "{{host}}/users/create-payment-method",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{accessToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"token\":\"FB1FB3B21DBC4C33BF8AAEF49F6A3841\"\n}"
+				},
+				"url": {
+					"raw": "{{host}}/users/create-payment-method",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"users",
+						"create-payment-method"
+					]
+				},
+				"description": "arguments example: {\"token\":\"FB1FB3B21DBC4C33BF8AAEF49F6A3841\"}"
+			},
+			"response": []
+		},
+		{
+			"name": "{{host}}/users/get-payment-method",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{accessToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\n\t\"number\":\"4242424242424242\",\n\t\"verification_value\":\"123\",\n\t\"first_name\": \"Will\",\n\t\"last_name\" : \"Mori\",\n\t\"month\": \"01\",\n\t\"year\": \"2026\"\n\t\n}"
+				},
+				"url": {
+					"raw": "{{host}}/users/get-payment-method",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"users",
+						"get-payment-method"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{host}}/users/charge",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{accessToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"description\":\"Viagem de X para Y\",\n\t\"price\": \"100\",\n\t\"no_capture\" : true\n}"
+				},
+				"url": {
+					"raw": "{{host}}/users/charge",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"users",
+						"charge"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{host}}/users/capture",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{accessToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"invoice_id\": \"0F2506DFC31B4E79BD2B0CB4C9DDC178\"\n}"
+				},
+				"url": {
+					"raw": "{{host}}/users/capture",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"users",
+						"capture"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{host}}/users/get-user-payment-method",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{accessToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"disabled": true
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "{{host}}/users/get-payment-method",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"users",
+						"get-payment-method"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{host}}/firebase/user/:id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{accessToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "time",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "duration",
+							"value": "17",
+							"type": "text"
+						},
+						{
+							"key": "km",
+							"value": "5.4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/firebase/user/G6MFP9HJfcNHtv9GcsxvN6Ul6XF3",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"firebase",
+						"user",
+						"G6MFP9HJfcNHtv9GcsxvN6Ul6XF3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{host}}/firebase/korridas/parent",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{accessToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "{{host}}/firebase/korridas/parent",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"firebase",
+						"korridas",
+						"parent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{host}}/firebase/race/add",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{accessToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "{{host}}/firebase/race/add",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"firebase",
+						"race",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{host}}/firebase/race/:id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{accessToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "{{host}}/firebase/race/-Lu9hpv8-VifUvdTENGG",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"firebase",
+						"race",
+						"-Lu9hpv8-VifUvdTENGG"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{host}}/users/race/charge",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{accessToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"description\":\"Viagem de X para Y\",\n\t\"price\": \"100\",\n\t\"no_capture\" : false,\n\t\"race_id\": \"-Lu9hpv8-VifUvdTENGG\"\n}"
+				},
+				"url": {
+					"raw": "{{host}}/users/race/charge",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"users",
+						"race",
+						"charge"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
