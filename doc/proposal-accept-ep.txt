@@ -1,0 +1,35 @@
+**********************************************************************************
+Proposal accept End Points
+**********************************************************************************
+
+{{host}}//users/:id/proposal
+
+k4k-api/src/user/user.controller.ts
+    @Post(':id/proposal')
+
+This End Point list the proposal of a driver
+
+TODO
+ - update End Point to get the logged user instead of the id from the url
+
+
+**********************************************************************************
+
+{{host}}/race/proposal/{id_proposal}/accept
+
+k4k-api/src/race/race.controller.ts
+    @Post('/proposal/:proposal_id/accept')
+
+k4k-api/src/race/race.service.ts
+    async acceptProposal(driverUdid:string, proposalId:string) {
+
+
+This EndPoint set set into the Mysql database the driver of a race, there is a unique key 
+in the mysql table to be sure that only one driver will be set for this race
+After that, the EP send to the queue k4k-driver-assignment in rabitMq an entry 
+
+TODO
+ - update acceptProposal methos in k4k-api/src/race/race.service.ts to set driver id in the race (firebase)
+
+
+ **********************************************************************************

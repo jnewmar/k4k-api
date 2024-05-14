@@ -1,0 +1,219 @@
+<h3>Sua compra da atividade {{ order.name }} - Colégio {{ order.school.name }}</h3>
+
+<p>Olá {{ user.name }}, tudo bem? <br>
+Primeiramente agradeçemos a sua confiança e seja muito bem vinda(o) á kar4kids! Ficamos felizes em poder contribuir com atividades que são importantíssimas para o futuro do seu filho(a)!<br>
+Nosso propósito é nutrir o sentimento mais poderoso do mundo: o Amor de mãe! E queremos fazer isso facilitando o dia-a-dia de toda mamãe e papai.</p>
+
+<br>
+
+<h4><b>COMO FUNCIONA</b></h4>
+<p>Após a sua aquisição da atividade no site da Eskolare, seguem os próximos passos:</p>
+<ol>
+    <li><b>PASSO:</b> Confirmação dos dados da criança e das atividades a seguir</li>
+    <li><b>PASSO:</b> Envio de informações adicionais</li>
+    <li><b>PASSO:</b> Recebimento via WhatsApp da confirmação da data de início das atividades, assim como o procedimento para matrícula e dados da Professora&#x2F;Turma</li>
+</ol>
+
+<hr>
+<br>
+
+<h4>PASSO 1: Confirmação dos dados</h4>
+
+<p>
+    Poderia por favor nos <b>confirmar</b> as informações abaixo antes de darmos início ás aulas?
+</p>
+
+<p>DADOS DA CRIANÇA</p>
+<hr>
+<table>
+    <tbody>
+        <tr>
+            <td>Nome do Responsável</td>
+            <td>{{ user.name }}</td>
+        </tr>
+        <tr>
+            <td>Tel&#x2F;WhatsApp</td>
+            <td>{{ user.phoneNumber }}</td>
+        </tr>
+        <tr>
+            <td>Nome da criança</td>
+            <td>{{ kid.name }}</td>
+        </tr>
+        <tr>
+            <td>Data de Nascimento</td>
+            <td>{{ kid.birthDate }}</td>
+        </tr>
+        <tr>
+            <td>Colégio</td>
+            <td>{{ kid.school }}</td>
+        </tr>
+        <tr>
+            <td>Série</td>
+            <td>{{ kid.serie }}</td>
+        </tr>
+    </tbody>
+</table>
+<br>
+
+<p>ATIVIDADE CONTRATADA</p>
+<hr>
+<table>
+    <tbody>
+        <tr>
+            <td>Atividade</td>
+            <td>{{ order.name }}</td>
+        </tr>
+        <tr>
+            <td>Local</td>
+            <td>{{ order.local }}</td>
+        </tr>
+        <tr>
+            <td>Endereço</td>
+            <td>{{ order.school.fullAddress }}</td>
+        </tr>
+        <tr>
+            <td>Turma</td>
+            <td>{{ order.school.class }}</td>
+        </tr>
+        <tr>
+            <td>Mensalidade</td>
+            <td>{{ order.payment.installments }} x R$ {{ order.payment.installments_amount }}</td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<br>
+
+<h4>PASSO 2: Envio das informações adicionais</h4>
+<p>
+    Poderia por favor nos <b>enviar</b> as informações abaixo antes de darmos início ás aulas?
+</p>
+
+<p>DADOS DA CRIANÇA</p>
+<hr>
+<table>
+    <tbody>
+        <tr>
+            <td>Nome</td>
+            <td>{{ kid.name }}</td>
+        </tr>
+        <tr>
+            <td>Data de Nascimento</td>
+            <td>{{ kid.birthDate }}</td>
+        </tr>
+        <tr>
+            <td>Colégio</td>
+            <td>{{ kid.school }}</td>
+        </tr>
+        <tr>
+            <td>Série</td>
+            <td>{{ kid.serie }}</td>
+        </tr>
+        <tr>
+            <td>Gênero</td>
+            <td>{{ kid.gender }} </td>
+        </tr>
+        <tr>
+            <td>Relação</td>
+            <td>{{ kid.relationship }}</td>
+        </tr>
+    </tbody>
+</table>
+
+<p>TRANSPORTE</p>
+<hr>
+<table>
+    <tbody>
+        <tr>
+            <td>Dias</td>
+        </tr>
+        <tr>
+            <td>Horários</td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<table>
+    <p>ENDEREÇO DE SAÍDA</p>
+    <hr>
+    <tbody>
+        <tr>
+            <td>Endereço</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Número</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Referência</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>CEP</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Bairro</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Cidade&#x2F;Estado</td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<table>
+    <p>ENDEREÇO DE CHEGADA</p>
+    <hr>
+    <tbody>
+        <tr>
+            <td>Endereço</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Número</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Referência</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>CEP</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Bairro</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Cidade&#x2F;Estado</td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+<br>
+
+<h4>PASSO 3: Recebimento das informações pelo WhatsApp</h4>
+<hr>
+
+<p>Após o envio das informações necessárias, entraremos em contato pelo WhatsApp em até 3 dias úteis para tirar suas dúvidas, confirmarmos o início das aulas e darmos as demais informações relativa á matrícula e mãetorista (caso necessário).
+    <br><br>
+    Caso prefira tirar alguma dúvida ou fazer alguma observação agora, clique aqui
+    <a href="https://api.whatsapp.com/send?phone=1125000400">(link para WhatsApp)</a>
+    <br><br>
+    Mais uma vez agradecemos pela confiança e parabéns por dar mais esse passo rumo ao desenvolvimento do seu filho(a)!
+</p>
+
+<hr>
+<p><b>
+    Atenciosamente
+    <br><br>
+    Danilo Moniwa
+    <br><br>
+    CEO e Founder
+    <br><br>
+    (11) 2500-0400
+</p></b>

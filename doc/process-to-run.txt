@@ -1,0 +1,49 @@
+**********************************************************************************
+PROCESS TO RUN
+**********************************************************************************
+
+Para rodar API (web host)
+
+cd k4k-api
+npm run start:dev
+
+**********************************************************************************
+
+Para rodar proceso que importa os drivers do firebase para o mysql
+
+cd k4k-api
+node jobs/import-drivers-from-firebase-to-mysql.ts
+
+TODO
+migrar para typescript
+
+**********************************************************************************
+
+Para rodar proceso que trata as requisições de drivers
+
+cd k4k-api
+ts-node jobs/driver-request-processor.ts
+
+
+DONE -> verificar agenda dos drivers para ver disponibilidade
+
+**********************************************************************************
+
+Para rodar proceso que faz o tratamento de tudo que é necessario quando um driver aceita uma corrida
+
+cd k4k-api
+ts-node jobs/driver-assignment-processor.ts
+
+This process check the RabitMq queue k4k-driver-assignment, and do the process necessary when a race is accepted
+
+DONE
+
+ - expire proposal of the other users (mysql and firebase)
+  - add race to the driver calendar (mysql)
+
+TODO
+
+ - add race to the mother calendar (mysql) - not necessary yet
+ - send notification to the mother (call firebase function)
+ - capture charge (iugu)
+ 
